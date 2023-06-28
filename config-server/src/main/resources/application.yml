@@ -1,12 +1,20 @@
-
 spring:
   application:
     name: CONFIG-SERVER-SERVICE
+    profiles:
+      active: native
   cloud:
     config:
+      server:
+        native:
+          search-locations: C:\Users\goura\Downloads\Complete_microservice_Project\Complete_microservice_project\configs
+
+
+
 
         git:
           uri: https://github.com/gouravgouravgupta/Complete_microservice_Project
           search-paths: configs
+
 server:
   port: 8084
