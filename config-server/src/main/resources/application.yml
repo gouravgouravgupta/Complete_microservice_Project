@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: CONFIG-SERVER-SERVICE
+  cloud:
+    config:
+
+        git:
+          uri: https://github.com/gouravgouravgupta/Complete_microservice_Project
+          search-paths: configs
+server:
+  port: 8084
